@@ -57,6 +57,8 @@ font-size: 2rem;
     border-width: 0;
     border-bottom: 1px solid var(--color-lightgrey);
     color: var(--color-white);
+    transition: transform 0.3s;
+    transform: translateY(0);
 }
 .counter__action {
     display: flex;
@@ -87,10 +89,12 @@ font-size: 2rem;
 
 .counter__button:active {
     background: var(--color-darkgrey);
+    transform: translateY(10%);
 }
 
 .counter__button_first:active {
     background: var(--color-darkgrey);
+    transform: translateY(10%);
 }
 
 

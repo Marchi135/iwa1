@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+html {
+ height: 100vh;  
+}
+
 body {
     margin: 0px;
     background-color: var(--colour-mediumgrey);
@@ -62,7 +66,7 @@ text-align: center;
 }
 
 .counter__button:active {
-    color: dark;
+    color: darkgrey;
 }
 
 .counter__button_first {
@@ -75,6 +79,7 @@ text-align: center;
     color: var(--color-lightgrey);
     
 }
+/*-----footer------*/
 
 .footer {
     background: darkgrey;

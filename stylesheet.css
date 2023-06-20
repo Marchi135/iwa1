@@ -89,12 +89,12 @@ font-size: 2rem;
 
 .counter__button:active {
     background: var(--color-darkgrey);
-    transform: translateY(10%);
+    transform: translateY(-2%);
 }
 
 .counter__button_first:active {
     background: var(--color-darkgrey);
-    transform: translateY(10%);
+    transform: translateY(-2%);
 }
 
 

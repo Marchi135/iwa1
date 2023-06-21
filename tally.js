@@ -13,25 +13,28 @@ const MIN_NUMBER = -5
  const subtractHandler = () => {
     const newValue = parseInt(number.value) -1
     number.value = newValue
-    if(newValue <= MIN_NUMBER) {
+
+    if(add.disabled === true) {
+        add.disabled = false
+     } 
+
+    if(newValue <= MIN_NUMBER){
         subtract.disabled = true
-     } else {
-        subtract.disabled = false
+     }   
      }
- }
 
- 
-
- const addHandler = () => {
+  const addHandler = () => {
     const newValue = parseInt(number.value) +1
     number.value = newValue
+
+    if(subtract.disabled === true) {
+        subtract.disabled = false
+    }
+
     if(newValue >= MAX_NUMBER) {
         add.disabled = true
-     } else {
-        add.disabled = false
-     }
+     }  
  }
  
-
  subtract.addEventListener ('click', subtractHandler)
  add.addEventListener('click', addHandler)

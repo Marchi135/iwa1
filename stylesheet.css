@@ -75,6 +75,8 @@ font-size: 2rem;
         font-size: 3rem;
         color: var(--color-lightgrey);
 }
+
+
 .counter__button_first {
     border-right: solid 1px var(--color-lightgrey);
     border-left: 0;
@@ -96,6 +98,14 @@ font-size: 2rem;
     background: var(--color-darkgrey);
     transform: translateY(-2%);
 }
+
+.counter__button:disabled {
+    background: red;
+    } 
+
+.counter__button_first:disabled {
+    background: red;
+    }
 
 
 /*  footer */

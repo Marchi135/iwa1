@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<script src="./tally.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -40,14 +40,15 @@
 </aside>
 
 <main class="counter">
-    <input class="counter__value" readonly value="10000">
+    <input class="counter__value" data-key="number" readonly value="0">
     <div class="counter__action">
-    <button class="counter__button_first">-</button>
-    <button class="counter__button">+</button>
+    <button class="counter__button_first" data-key="subtract">-</button>
+    <button class="counter__button" data-key="add">+</button>
     </div>
 </main>
 <footer class="footer">Inspired by <a class="footer__link" href="https://tallycount.app/">Tally Count</a>.
     This is a practice project for learning javascript
 </footer>
+
 </body>
 </html>
